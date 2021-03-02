@@ -4,14 +4,14 @@
 #include "Arduino.h"
 class SensoreUltraMatto {
   public:
-    SensoreUltraMatto(int out, int trig);
-    SensoreUltraMatto(int out, int trig[], int n);
+    SensoreUltraMatto(int trigger, int echo);
+    SensoreUltraMatto(int trigger, int echo[], int n);
     float dist();
     float dist(int n);
   private:
     int out;
     int trig[];
     int n;
-    void init(int out, int trig[], int n);
+    void init(int trigger, int echo[], int n);
 };
 #endif
