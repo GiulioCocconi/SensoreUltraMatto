@@ -31,6 +31,16 @@ double SensoreUltraMatto::dist(n) {
   return distanza;
 }
 
+String SensoreUltraMatto::getData() {
+  String result = "";
+  for (int i = 0; i<this->n; i++) {
+    result = result + "Sensore" + i + ": ";
+    result += this->dist(i);
+    result += "\n";
+  }
+  return result;
+}
+
 float SensoreUltraMatto::dist() {
   return this->dist(0);
 }
