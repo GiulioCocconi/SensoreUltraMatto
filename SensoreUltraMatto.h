@@ -8,6 +8,7 @@ class SensoreUltraMatto {
     SensoreUltraMatto(int trigger, int echo[], int n);
     float dist();
     float dist(int n);
+    String getData();
   private:
     int out;
     int trig[];
