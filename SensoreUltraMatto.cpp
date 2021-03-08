@@ -11,14 +11,14 @@ void SensoreUltraMatto::init(int trigger, int echo[], int n) {
 }
 
 SensoreUltraMatto::SensoreUltraMatto(int trigger, int echo) {
-  this->init(int trigger, new int[1]{echo}, 1);
+  this->init(trigger, new int[1]{echo}, 1);
 }
 
 SensoreUltraMatto::SensoreUltraMatto(int trigger, int echo[], int n) {
   this->init(trigger, echo, n);
 }
 
-double SensoreUltraMatto::dist(n) {
+double SensoreUltraMatto::dist(int n) {
   digitalWrite(this->trigger, LOW);
   delayMicroseconds(2);
   digitalWrite(this->trigger, HIGH);
