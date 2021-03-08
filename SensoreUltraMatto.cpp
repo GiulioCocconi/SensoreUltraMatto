@@ -1,4 +1,5 @@
 #include SensoreUltraMatto.h
+
 void SensoreUltraMatto::init(int trigger, int echo[], int n) {
   this->trigger = trigger;
   this->echo = echo;
@@ -34,11 +35,12 @@ double SensoreUltraMatto::dist(n) {
 String SensoreUltraMatto::getData() {
   String result = "";
   for (int i = 0; i<this->n; i++) {
-    result = result + "Sensore" + i + ": ";
-    result += this->dist(i);
+    String distanza = String(this->dist(i), 2);
+    result = result + "Sensore" + i + ": \t";
+    result += distanza;
     result += "\n";
   }
-  return result + "\n\n";
+  return result;
 }
 
 float SensoreUltraMatto::dist() {
