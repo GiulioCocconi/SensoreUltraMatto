@@ -27,7 +27,7 @@ double SensoreUltraMatto::dist(n) {
   unsigned long durata = pulseIn(this->echo[n], HIGH);
   double distanza = durata/58.0;//www.acmesystems.it/HC-SR04
   if (distanza == 0 || distanza > 400) {
-    return -1.0
+    return -1.0;
   }
   return distanza;
 }
@@ -35,12 +35,11 @@ double SensoreUltraMatto::dist(n) {
 String SensoreUltraMatto::getData() {
   String result = "";
   for (int i = 0; i<this->n; i++) {
-    String distanza = String(this->dist(i), 2);
-    result = result + "Sensore " + i + ": \t";
+    String distanza = String(this->dist(i), 1);
     result += distanza;
-    result += "\n";
+    result += "\t";
   }
-  return result;
+  return result + "\n";
 }
 
 float SensoreUltraMatto::dist() {
