@@ -6,8 +6,8 @@ class SensoreUltraMatto {
   public:
     SensoreUltraMatto(int trigger, int echo);
     SensoreUltraMatto(int trigger, int echo[], int n);
-    float dist();
-    float dist(int n);
+    double dist();
+    double dist(int n);
     String getData();
   private:
     int trigger;
