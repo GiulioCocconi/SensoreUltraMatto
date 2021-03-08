@@ -42,6 +42,6 @@ String SensoreUltraMatto::getData() {
   return result + "\n";
 }
 
-float SensoreUltraMatto::dist() {
+double SensoreUltraMatto::dist() {
   return this->dist(0);
 }
