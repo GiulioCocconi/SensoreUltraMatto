@@ -36,7 +36,7 @@ String SensoreUltraMatto::getData() {
   String result = "";
   for (int i = 0; i<this->n; i++) {
     String distanza = String(this->dist(i), 2);
-    result = result + "Sensore" + i + ": \t";
+    result = result + "Sensore " + i + ": \t";
     result += distanza;
     result += "\n";
   }
