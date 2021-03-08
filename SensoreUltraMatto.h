@@ -11,7 +11,7 @@ class SensoreUltraMatto {
     String getData();
   private:
     int trigger;
-    int echo[];
+    int *echo;
     int n;
     void init(int trigger, int echo[], int n);
 };
