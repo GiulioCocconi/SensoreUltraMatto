@@ -1,0 +1,13 @@
+{
+  "name": "SensoreUltraMatto",
+  "version": "Gestione sensore ad Ultrasuoni",
+  "description": "Gestione sensore ad Ultrasuoni",
+  "keywords": "",
+  "repository":
+  {
+    "type": "git",
+    "url": "Gestione sensore ad Ultrasuoni"
+  },
+  "frameworks": ["arduino"],
+  "platforms": "*"
+}
