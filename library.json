@@ -1,7 +1,7 @@
 {
   "name": "SensoreUltraMatto",
-  "version": "Gestione sensore ad Ultrasuoni",
-  "description": "Gestione sensore ad Ultrasuoni",
+  "version": "1.0.0",
+  "description": "Gestione sensore HCSR04",
   "keywords": "",
   "repository":
   {
