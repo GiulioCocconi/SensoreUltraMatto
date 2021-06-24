@@ -6,7 +6,7 @@
   "repository":
   {
     "type": "git",
-    "url": "Gestione sensore ad Ultrasuoni"
+    "url": "https://github.com/GiulioCocconi/SensoreUltraMatto.git"
   },
   "frameworks": ["arduino"],
   "platforms": "*"
